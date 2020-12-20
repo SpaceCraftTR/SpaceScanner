@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
     std::cout<<"Please enter the ending port. (0-65535)"<<std::endl;
     std::cin>>ending_port;
     
-    check_ports(starting_port,ending_port,ip_buffer);
+    check_ports(starting_port,ending_port,SpaceSockets2::dns_resolve(ip_buffer)); //We can resolve DNS addresses!
 
 
 
